@@ -4,6 +4,8 @@ jobs:
   build:
      runs-on: ubuntu-latest
      steps:
-       - name: Build Step
-         run: echo "My Demo Build"      
+       - name: Checkout the code
+         uses: actions/checkout@v4
+       - name: Print index.html file
+         run: cat index.html
        
